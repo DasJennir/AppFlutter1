@@ -16,21 +16,28 @@ class Home extends StatelessWidget {
             fontSize: 25.0,
             fontFamily: 'Signi',
 
+
           ),
         ),
         centerTitle: true,
       ),
       body: Center(
-        child: Icon(
-          Icons.laptop_windows,
-          color: Colors.white,
-          size: 50,
-
+        child:RaisedButton.icon(
+          onPressed: () {
+            print('Hello There');
+          },
+          icon: Icon(
+            Icons.accessibility
+          ),
+          label: Text('T Pose Boi'),
+          color: Colors.blueAccent,
         ),
       ),
       backgroundColor: Colors.lightBlue,
       floatingActionButton: FloatingActionButton(
-        onPressed: () {},
+        onPressed: () {
+          print('You Have Clicked Me !!!');
+        },
         child: Text('Click'),
         backgroundColor: Colors.blueAccent[800],
       ),
